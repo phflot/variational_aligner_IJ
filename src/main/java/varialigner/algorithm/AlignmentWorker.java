@@ -66,18 +66,8 @@ public class AlignmentWorker extends SwingWorker<Void, Void> {
 		private final float maxValue;
 		private final int width;
 		private final int height;
-		// private final boolean isInplace;
 
 		private final static int nSlices = 1;
-
-		/**
-		 * deprecated, inplace will not be supported for the 1D version
-		 * 
-		 * @return
-		 */
-		/*
-		 * public boolean isInplace() { return isInplace; }
-		 */
 
 		public int getWidth() {
 			return width;
@@ -118,17 +108,11 @@ public class AlignmentWorker extends SwingWorker<Void, Void> {
 			ImagePlusImg<T, A> imgLow = (ImagePlusImg<T, A>) o.getImg().factory().create(width, height, 1);
 
 			float[] s = o.getSigma();
-			Gauss3.gauss(new double[] { s[0], s[1], s[2] }, Views.extendMirrorSingle(registrationTarget), imgLow);
+			Gauss3.gauss(new double[] { s[0], s[1], s[2] }, Views.extendZero(registrationTarget), imgLow);
 
 			this.imgLow = imgLow;
 			minValue = Util.getMin(imgLow);
 			maxValue = Util.getMax(imgLow);
-
-			/*
-			 * this.isInplace = o.isInplace(); if (o.isInplace()) { registrationTarget =
-			 * o.getImg(); } else { registrationTarget = (ImagePlusImg<T, A>)
-			 * o.getImg().factory().create(dims); }
-			 */
 		}
 
 		public ImagePlusImg<FloatType, FloatArray> getFrameLow() {

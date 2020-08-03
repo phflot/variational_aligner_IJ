@@ -26,7 +26,7 @@ public class AlignmentJob extends LinkedList<AlignmentChannelOptions> {
 	 */
 	private int iterations = 50;
 	private int updateLag = 5;
-	private int levels = 50;
+	private int levels = 100;
 	private float eta = 0.9f;
 	private float alpha = 0.5f;
 

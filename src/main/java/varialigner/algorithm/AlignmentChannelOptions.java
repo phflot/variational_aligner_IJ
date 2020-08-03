@@ -23,7 +23,7 @@ public class AlignmentChannelOptions<T extends NativeType<T> & ComplexType<T>, A
 	private int channel;
 
 	private float aData = 0.5f;
-	private final float[] sigma = new float[] { 0.0f, 3.0f, 0.0f };
+	private final float[] sigma = new float[] { 0.0f, 0.5f, 0.0f };
 	private float weight = 1.0f;
 
 	public float getAdata() {

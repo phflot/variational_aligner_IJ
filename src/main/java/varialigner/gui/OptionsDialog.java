@@ -63,7 +63,7 @@ public class OptionsDialog extends GenericDialog {
 	private AlignmentJob alignmentJob;
 
 	public static void main(String[] args) {
-		/*
+		
 		ImageJ ij = new ImageJ();
 
 		File file = new File("data/synth.tiff");
@@ -77,7 +77,7 @@ public class OptionsDialog extends GenericDialog {
 
 		impCh1Shift.show();
 
-		new OptionsDialog(ij, images).showDialog();*/
+		new OptionsDialog(ij, images).showDialog();
 	}
 
 	public OptionsDialog(final Frame parent, List<ImagePlusImg<? extends NativeType<?>, ?>> images) {
@@ -258,7 +258,7 @@ public class OptionsDialog extends GenericDialog {
 			alignmentJob.setIterations(20);
 			break;
 		case 1:
-			alignmentJob.setIterations(50);
+			alignmentJob.setIterations(70);
 			break;
 		case 2:
 			alignmentJob.setIterations(100);
