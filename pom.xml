@@ -1,0 +1,133 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <groupId>org.scijava</groupId>
+    <artifactId>pom-scijava</artifactId>
+    <version>29.1.0</version>
+    <relativePath />
+  </parent>  
+
+  <groupId>varialigner</groupId>
+  <artifactId>varialigner</artifactId>
+  <version>0.0.1-SNAPSHOT_</version>
+  <packaging>jar</packaging>
+  
+  <name>variational_aligner</name>
+    <description>Variational 1D Aligner</description>
+    <url>https://github.com/phflot/variational_aligner_IJ</url>
+    <inceptionYear>2020</inceptionYear>
+    <organization>
+        <name>N/A</name>
+        <url>N/A</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>N/A</name>
+            <url>N/A</url>
+            <distribution>N/A</distribution>
+        </license>
+    </licenses>
+ 
+    <developers>
+        <developer>
+            <id>phflot</id>
+            <name>Philipp Flotho</name>
+            <url>https://imagej.net/User:[MY-IMAGEJ-WIKI-ACCOUNT]</url>
+        </developer>
+    </developers>
+    
+    <contributors>
+        <contributor>
+            <name>None</name>
+        </contributor>
+    </contributors>
+    
+	<mailingLists>
+        <mailingList>
+            <name>Image.sc Forum</name>
+            <archive>https://forum.image.sc/</archive>
+        </mailingList>
+    </mailingLists>
+ 
+    <scm>
+        <connection>scm:git:git://github.com/[MY-ORG]/[MY-REPO]</connection>
+        <developerConnection>scm:git:git@github.com:[MY-ORG]/[MY-REPO]</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/phflot/variational_aligner_IJ</url>
+    </scm>
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>http://github.com/phflot/variational_aligner_IJ/issues</url>
+    </issueManagement>
+    <ciManagement>
+        <system>None</system>
+    </ciManagement>
+    
+	<properties>
+        <main-class>varialigner.LineScanAligner</main-class>
+        <package-name>varialigner</package-name>
+        <license.licenseName>cc0</license.licenseName>
+        <license.copyrightOwners>Philipp Flotho</license.copyrightOwners>
+    </properties>
+
+	<dependencies>
+		<!-- ImageJ: -->
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+		</dependency>
+		
+		<!-- imglib2 -->
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2-algorithm</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2-algorithm-fft</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2-algorithm-gpl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2-ij</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2-realtransform</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2-ui</artifactId>
+		</dependency>
+		
+		<!-- SCIFIO dependencies -->
+		<dependency>
+			<groupId>io.scif</groupId>
+			<artifactId>scifio</artifactId>
+		</dependency>
+	</dependencies>
+  
+      <repositories>
+        <repository>
+            <id>scijava.public</id>
+            <url>https://maven.scijava.org/content/groups/public</url>
+        </repository>
+    </repositories>
+</project>
