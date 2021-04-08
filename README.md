@@ -22,19 +22,19 @@ The plugin can be compiled with maven and then added to ImageJ and Fiji via inst
 
 The code is based on a publication. If you use this plugin for your work, please cite: 
   
-> P. Flotho, D. Thinnes, B. Kuhn, C. J. Roome, J. F. Vibell and D. J. Strauss, “Fast Variational Alignment of non-flat 1D Displacements with Applications in Neuroimaging” (bioRxiv), 2020. 
+> Flotho, P., Thinnes, D., Kuhn, B., Roome, C. J., Vibell, J. F., & Strauss, D. J. (2021). Fast variational alignment of non-flat 1D displacements for applications in neuroimaging. Journal of Neuroscience Methods, 353, 109076.
 
 BibTeX entry
 ```
-@article{floth20,
-    author = {Flotho, P. and Thinnes, D. and Kuhn, B. and Roome, C. J. and Vibell, J. F. and Strauss, D. J.},
-    title = {Fast Variational Alignment of non-flat 1D Displacements for Applications in Neuroimaging},
-	elocation-id = {2020.06.27.151522},
-	year = {2020},
-	doi = {10.1101/2020.06.27.151522},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2020/06/29/2020.06.27.151522},
-	eprint = {https://www.biorxiv.org/content/early/2020/06/29/2020.06.27.151522.full.pdf},
-	journal = {bioRxiv}
+@article{floth21,
+  title={Fast variational alignment of non-flat 1D displacements for applications in neuroimaging},
+  author={Flotho, Philipp and Thinnes, David and Kuhn, Bernd and Roome, Christopher J and Vibell, Jonas F and Strauss, Daniel J},
+  journal = {Journal of Neuroscience Methods},
+  volume = {353},
+  pages = {109076},
+  year = {2021},
+  issn = {0165-0270},
+  doi = {https://doi.org/10.1016/j.jneumeth.2021.109076},
+  url = {https://www.sciencedirect.com/science/article/pii/S016502702100011X},
 }
 ```
